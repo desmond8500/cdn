@@ -14,9 +14,9 @@ class CDNController extends Controller
             }
         ";
 
-        $response = $css;
-        // $response = Response::make($css);
-        // $response->header('Content-Type', 'text/css');
+        // $response = $css;
+        $response = Response::make($css);
+        $response->header('Content-Type', 'text/css');
 
         return $response;
     }
